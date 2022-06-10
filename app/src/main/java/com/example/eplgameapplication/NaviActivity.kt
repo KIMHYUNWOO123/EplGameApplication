@@ -10,7 +10,7 @@ import com.example.eplgameapplication.fragments.GameFragment
 import com.example.eplgameapplication.fragments.PlayerFragment
 import com.example.eplgameapplication.fragments.TeamFragment
 
-private const val TAG_Game = "Gmaefragment"
+private const val TAG_Game = "Gamefragment"
 private const val TAG_Team = "Teamfragment"
 private const val TAG_Player = "Playerfragment"
 
