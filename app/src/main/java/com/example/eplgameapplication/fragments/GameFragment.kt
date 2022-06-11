@@ -1,5 +1,6 @@
 package com.example.eplgameapplication.fragments
 
+import android.annotation.SuppressLint
 import android.graphics.Color
 import kotlinx.android.synthetic.main.fragment_game.*
 
@@ -47,6 +48,7 @@ class GameFragment : Fragment() {
                 Log.d("MQTTService", "Connection")
             }
 
+            @SuppressLint("ResourceAsColor")
             override fun messageArrived(topic: String?, message: MqttMessage?) {
                 Log.d("MQTTService","Message Arrived : " + message.toString())
                 val msg = message.toString()
@@ -67,14 +69,18 @@ class GameFragment : Fragment() {
                 }
                 if (msg.contains("game")){
                     var msg1  = msg.split(",")
-                    game1.text = msg1[1]
-                    game2.text = msg1[2]
-                    game3.text = msg1[3]
+                    score.text = (msg1[1].toInt() + 1).toString() + "번째 게임"
+                    game1.text = msg1[2]
+                    game2.text = msg1[3]
+                    game3.text = msg1[4]
                 }
                 if (msg.contains("winner")){
                     var msg1  = msg.split(",")
-                    game1.text = ""
+                    score.text = ""
+                    game1.text = "이번 시즌 우승팀"
+                    game1.textSize = 30F
                     game2.text = msg1[1]
+                    game2.textSize = 30F
                     game3.text = ""
                 }
             }

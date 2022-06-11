@@ -293,10 +293,20 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
                 android:id="@+id/game1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="70dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="15sp"
@@ -306,7 +316,7 @@
                 android:id="@+id/game2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="70dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textSize="15sp"
@@ -316,7 +326,7 @@
                 android:id="@+id/game3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="70dp"
                 android:layout_marginBottom="100dp"
                 android:layout_weight="1"
                 android:gravity="center"
