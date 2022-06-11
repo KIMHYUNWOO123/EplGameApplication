@@ -158,7 +158,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:textAllCaps="false"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/point3"
@@ -168,7 +169,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:textAllCaps="false"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/point4"
@@ -178,7 +180,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:textAllCaps="false"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/point5"
@@ -188,7 +191,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:textAllCaps="false"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/point6"
@@ -198,7 +202,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:textAllCaps="false"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
             <LinearLayout
@@ -222,7 +227,8 @@
                         android:gravity="center"
                         android:textAllCaps="false"
                         android:textColor="@color/red"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        />
 
                     <TextView
                         android:id="@+id/team2"
@@ -232,7 +238,8 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:textAllCaps="false"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/team3"
@@ -242,7 +249,8 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:textAllCaps="false"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/team4"
@@ -252,7 +260,8 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:textAllCaps="false"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/team5"
@@ -262,7 +271,8 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:textAllCaps="false"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/team6"
@@ -272,7 +282,8 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:textAllCaps="false"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
 
             </LinearLayout>

@@ -69,19 +69,25 @@ class GameFragment : Fragment() {
                 }
                 if (msg.contains("game")){
                     var msg1  = msg.split(",")
+                    score.setTextColor(Color.BLACK)
                     score.text = (msg1[1].toInt() + 1).toString() + "번째 게임"
+                    game1.setTextColor(Color.BLACK)
                     game1.text = msg1[2]
+                    game2.setTextColor(Color.BLACK)
                     game2.text = msg1[3]
+                    game3.setTextColor(Color.BLACK)
                     game3.text = msg1[4]
                 }
                 if (msg.contains("winner")){
                     var msg1  = msg.split(",")
-                    score.text = ""
-                    game1.text = "이번 시즌 우승팀"
-                    game1.textSize = 30F
-                    game2.text = msg1[1]
-                    game2.textSize = 30F
-                    game3.text = ""
+                    Log.d("winner", msg1.toString())
+                    score.text = "*우승팀*"
+                    game1.setTextColor(Color.RED)
+                    game1.text = msg1[1]
+                    game2.text = "*득점왕*"
+                    game3.setTextColor(Color.RED)
+                    game3.text = msg1[2] + "-" + msg1[3] + "골"
+
                 }
             }
             override fun deliveryComplete(token: IMqttDeliveryToken?) {
